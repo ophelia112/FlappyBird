@@ -1,3 +1,14 @@
+.body{
+    position: relative;
+}
+.tips{
+    position:absolute;
+    height: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+}
 .game{
     width: 800px;
     height: 600px;
