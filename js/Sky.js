@@ -3,7 +3,7 @@ const skyStyle = getComputedStyle(skyDom);
 const skyWidth = parseFloat(skyStyle.width);
 const skyHeight = parseFloat(skyStyle.height);
 
-
+// 派生类
 class Sky extends Rectangle{
     constructor(){
         super(skyWidth,skyHeight,0,0,0,-100,skyDom);

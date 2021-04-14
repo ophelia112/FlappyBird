@@ -1,4 +1,5 @@
 const gameWidth = gameDom.clientWidth;
+// 派生类
 class Pipe extends Rectangle{
     constructor(height,top,speed,dom){
         super(52,height,gameWidth,top,0,speed,dom);
@@ -60,6 +61,7 @@ class PipePairProducer{
             return;
         }
         this.timer = setInterval(() => {
+            // 每隔一段时间产生一种柱子对，为提高性能将已经滑过的柱子对在数组中去掉
             this.pairs.push(new PipePair(this.speed));
             for(let i = 0; i<this.pairs.length;i++){
                 var pair = this.pairs[i];

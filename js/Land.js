@@ -8,6 +8,7 @@ class Land extends Rectangle{
     constructor(speed){
         super(landWidth,landHeight,0,landTop,0,speed,landDom);
     }
+    // 利用图片定位的不同产生小鸟飞翔效果
     onMove(){
        if(this.Left <= -landWidth/2){
            this.Left = 0;

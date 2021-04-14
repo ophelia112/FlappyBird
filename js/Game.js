@@ -17,9 +17,11 @@ class Game{
             //重新开始游戏
             window.location.reload();
         }
+        // 生成柱子对
         this.pipeProducer.startProduce();
         this.bird.startSwing();
         this.timer = setInterval(() => {
+            // 固定每个类的移动速度，保持统一
             const duration = this.tick/1000;
             this.bird.move(duration);
             this.sky.move(duration);
@@ -33,7 +35,7 @@ class Game{
             }
         }, this.tick);
     }
-
+    // 判断是否撞到柱子
     isHit(rec1,rec2){
         var centerX1 = rec1.Left + rec1.Width/2;
         var centerY1 = rec1.Top + rec1.Height/2;

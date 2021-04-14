@@ -27,7 +27,7 @@ class Bird extends Rectangle {
             this.render();
         }, 300);
     }
-    
+    // 模拟翅膀扇动效果
     render(){
         super.render();
         this.Dom.className = `bird swing${this.swingStatus}`;
@@ -42,8 +42,6 @@ class Bird extends Rectangle {
         super.move(duration);
         this.SpeedY += this.g * duration;
     }
-
-
     onMove() {
         if (this.Top <= 0) {
             this.Top = 0;

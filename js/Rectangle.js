@@ -1,4 +1,5 @@
 class Rectangle {
+    // 定义基本模型的构造方法
     constructor(Width, Height, Left, Top, SpeedY, SpeedX, Dom) {
         this.Width = Width;
         this.Height = Height;
